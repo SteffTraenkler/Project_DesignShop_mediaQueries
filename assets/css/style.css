@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@font-face {
+    font-family: 'Karla, bold';
+    src: url(../font/Karla-Bold.ttf);
+}
+@font-face {
+    font-family: 'Karla, italic regular';
+    src: url(../font/Karla-Italic.ttf);
+}
+@font-face {
+    font-family: 'Karla, medium';
+    src: url(../font/Karla-Medium.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 3rem 3rem 1rem 3rem;
+    font-family: 'Karla', sans-serif;
+    color: #323A45;
+}
+.grey{
+    color: #848484;
+    font-size: 1rem;
+}
+.light, .grey{
+    font-family: 'Karla', sans-serif;
+}
+.italic{
+    font-family: 'Karla, italic regular';
+}
+img{
+    width: 100%;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-family: 'Karla, medium';
+}
+a{
+    color: unset;
+    text-decoration: unset;
+    font-family: 'Karla, bold'; 
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+main article{
+    margin-top: 30px;
+}
+main article p{
+    margin-top: 20px;
+}
+p{
+    font-size: 1.2rem;
+}
+footer section article{
+    margin: 25% auto;
+}
+footer section article h2{
+    margin-bottom: 60px;
+}
+footer section article p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 769px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    .rows{
+        grid-column: 1/4;
+    }
+    header nav ul{
+        display: flex;
+        gap: 40px
+    }
+    footer section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
