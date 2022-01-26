@@ -67,6 +67,10 @@ label{
 /* main */
 img{
     width: 100%;
+    transition: 1s;
+}
+img:hover{
+    opacity: 0.2;
 }
 div{
     display: flex;
