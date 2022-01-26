@@ -32,6 +32,39 @@ body{
 .italic{
     font-family: 'Karla, italic regular';
 }
+.fas{
+    color: #848484;
+    font-size: 0.5rem;
+}
+a{
+    color: unset;
+    text-decoration: unset;
+    font-family: 'Karla, bold'; 
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    text-align: right;
+}
+ul{
+    list-style: none;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+li{
+    padding-bottom: 50px;
+}
+label{
+    font-size: 3rem;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+/* main */
 img{
     width: 100%;
 }
@@ -42,18 +75,6 @@ div{
 h2{
     font-family: 'Karla, medium';
 }
-a{
-    color: unset;
-    text-decoration: unset;
-    font-family: 'Karla, bold'; 
-}
-ul{
-    list-style: none;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-}
 main article{
     margin-top: 30px;
 }
@@ -63,6 +84,7 @@ main article p{
 p{
     font-size: 1.2rem;
 }
+/* footer */
 footer section article{
     margin: 25% auto;
 }
@@ -78,6 +100,16 @@ footer section article p{
         display: grid;
         grid-template-columns: 1fr;
     }
+    label{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+
 }
 @media screen and (min-width: 769px) {
     main{
@@ -95,5 +127,8 @@ footer section article p{
     footer section{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    label{
+        display: none;
     }
 }
